@@ -1,10 +1,10 @@
 apply plugin: 'com.android.library'
 
-def DEFAULT_COMPILE_SDK_VERSION             = 30
-def DEFAULT_BUILD_TOOLS_VERSION             = "27.0.3"
-def DEFAULT_TARGET_SDK_VERSION              = 30
+def DEFAULT_COMPILE_SDK_VERSION             = 35
+def DEFAULT_BUILD_TOOLS_VERSION             = "35.0.0"
+def DEFAULT_TARGET_SDK_VERSION              = 35
 def DEFAULT_ANDROID_SUPPORT_VERSION         = "27.1.0"
-def DEFAULT_ANDROID_MIN_SDK_VERSION         = 21
+def DEFAULT_ANDROID_MIN_SDK_VERSION         = 28
 
 android {
     namespace = "com.twiliorn.library"
@@ -51,6 +51,6 @@ dependencies {
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "com.android.support:appcompat-v7:$androidSupportVersion"
-    implementation "com.twilio:video-android:7.6.1"
+    implementation "com.twilio:video-android:7.7.1"
     implementation "com.facebook.react:react-native:+"  // From node_modules
 }
